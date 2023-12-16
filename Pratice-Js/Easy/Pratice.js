@@ -238,4 +238,135 @@
 // console.log(missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1])); // Output should be 8
 // console.log(missingNumber([0])); // Output should be 1
 
+// function sumArray(nums) {
+//     // Your code here to calculate the sum of the elements
+//     let sum = 0
+//     for (let i = 0; i < nums.length; i++) {
+//         sum += nums[i];
+//     }
+//     return sum
+//     // Return the sum
+// }
 
+// // Test cases
+// console.log(sumArray([1, 2, 3])); // Output should be 6
+// console.log(sumArray([5, 7, 2, 9])); // Output should be 23
+// console.log(sumArray([-3, 10, 4])); // Output should be 11
+
+// function countVowels(str) {
+//   // Your code here to count the number of vowels
+//   let TotalNumVowel = 0;
+//   let vowel = ["a", "e", "i", "o", "u"];
+
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+
+//     if (vowel.includes(char)) {
+//       TotalNumVowel++;
+//     }
+//   }
+
+//   return TotalNumVowel;
+//   // Return the count of vowels
+// }
+
+// // Test cases
+// console.log(countVowels("Hello")); // Output should be 2
+// console.log(countVowels("JavaScript")); // Output should be 3
+// console.log(countVowels("Testing")); // Output should be 2
+
+// function mostFrequentChars(str) {
+//   // Your code here to find the most frequent character(s)
+//   let storeWord = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     let word = str[i];
+//     for (let j = i +1; j < str.length; j++) {
+//       if (word == str[j]) {
+//         storeWord.push(word);
+//       }
+//     }
+//   }
+//   return storeWord
+//   // Return an array containing the most frequent character(s)
+// }
+
+// // Test cases
+// console.log(mostFrequentChars("programming")); // Output should be ["g", "r", "m"]
+// console.log(mostFrequentChars("hello")); // Output should be ["l"]
+// console.log(mostFrequentChars("test")); // Output should be ["t", "e"]
+
+// function moveZeroes(nums) {
+//   // Your code here to move zeroes to the end
+//   let zeroNum = 0;
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] !== 0) {
+//       nums[zeroNum] += nums[i];
+//       if (i !== zeroNum) {
+//         nums[i] = 0;
+//       }
+//       zeroNum++;
+//     }
+//     nums[zeroNum] = 0;
+//   }
+//   return zeroNum;
+//   // Modify the 'nums' array in place
+// }
+
+// // Test case
+// const array = [0, 1, 0, 3, 12];
+// moveZeroes(array);
+// console.log(array); // Output should be [1, 3, 12, 0, 0]
+
+// function searchInsert(nums, target) {
+//   let left = 0;
+//   let right = nums.length - 1;
+
+//   while (left <= right) {
+//     let mid = Math.floor((left + right) / 2);
+
+//     if (nums[mid] === target) {
+//       return mid;
+//     } else if (nums[mid] < target) {
+//       left = mid + 1;
+//     } else {
+//       right = mid - 1;
+//     }
+//   }
+
+//   return left; // If target is not found, return the insertion position
+// }
+
+// // Test cases
+// console.log(searchInsert([1, 3, 5, 6], 5)); // Output should be 2
+// console.log(searchInsert([1, 3, 5, 6], 2)); // Output should be 1
+// console.log(searchInsert([1, 3, 5, 6], 7)); // Output should be 4
+// console.log(searchInsert([1, 3, 5, 6], 0)); // Output should be 0
+
+// function reverseWords(str) {
+//   // Your code here to reverse the characters in each word
+//   let storeStr = str.split(" ");
+//   for (let i = 0; i < storeStr.length; i++) {
+//     let wordSplit = storeStr[i].split("");
+//     let rever = wordSplit.reverse().join("");
+//     storeStr[i] = rever;
+//   }
+//   return storeStr.join(" ");
+//   // Return the modified string with reversed words
+// }
+
+// // Test case
+// const sentence = "Let's code together";
+// console.log(reverseWords(sentence)); // Output should be "s'teL edoc rehtegot"
+
+
+function isPalindrome(str) {
+    // Your code here to check if the string is a palindrome
+    
+    // Return true if it's a palindrome, otherwise false
+}
+
+// Test cases
+console.log(isPalindrome("A man, a plan, a canal: Panama")); // Output should be true
+console.log(isPalindrome("race a car")); // Output should be false
+console.log(isPalindrome("level")); // Output should be true
