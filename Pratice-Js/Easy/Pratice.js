@@ -359,14 +359,25 @@
 // const sentence = "Let's code together";
 // console.log(reverseWords(sentence)); // Output should be "s'teL edoc rehtegot"
 
+// function isPalindrome(str) {
+//     // Your code here to check if the string is a palindrome
 
-function isPalindrome(str) {
-    // Your code here to check if the string is a palindrome
-    
-    // Return true if it's a palindrome, otherwise false
-}
+//     // Return true if it's a palindrome, otherwise false
+// }
 
-// Test cases
-console.log(isPalindrome("A man, a plan, a canal: Panama")); // Output should be true
-console.log(isPalindrome("race a car")); // Output should be false
-console.log(isPalindrome("level")); // Output should be true
+// // Test cases
+// console.log(isPalindrome("A man, a plan, a canal: Panama")); // Output should be true
+// console.log(isPalindrome("race a car")); // Output should be false
+// console.log(isPalindrome("level")); // Output should be true
+
+// reverseWord(str){
+//         //Your code here
+//         let string = []
+        
+//         for(let i = str.length ; i >= 0 ; i--){
+//             string.push(str[i])
+//         }
+//         return string.join("")
+//     }
+
+// geek for geek array question
